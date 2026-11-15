@@ -80,7 +80,7 @@
             bottom: 0;
             position: fixed;
             width: 100vw;
-            background-color: #ffffff !important;
+            background-color: #1e1e1e !important;
             border-radius: 8px;
             border: 1px solid #444;
         }
@@ -180,7 +180,7 @@
         const restartDelayInput = document.getElementById('restart-delay');
         const fontSizeInput = document.getElementById('font-size');
         const textColorInput = document.getElementById('text-color');
-        const bgColorInput = document.getElementById('bg-color');
+        // const bgColorInput = document.getElementById('bg-color');
         const chkTran = document.getElementById('chk-tran');
         const langTran = document.getElementById('lang-tran');
 
@@ -192,7 +192,7 @@
 
         fontSizeInput.addEventListener('input', updateAppearance);
         textColorInput.addEventListener('input', updateAppearance);
-        bgColorInput.addEventListener('input', updateAppearance);
+        // bgColorInput.addEventListener('input', updateAppearance);
         updateAppearance();
 
         function appendSystemMsg(msg) {
