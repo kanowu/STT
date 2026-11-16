@@ -1,0 +1,106 @@
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+#control-panel {
+    /*background-color: #2d2d2d;*/
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: 1em;
+}
+
+.control-group {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+}
+
+.control-group::after {
+    content: "|";
+    margin: 0 3px;     /* 設定左右間距，讓版面不擁擠 */
+    color: #ccc;       /* 設定直線顏色 */
+}
+
+.control-group:last-child::after {
+    content: "";
+    margin: 0;
+}
+
+select, input[type="number"], input[type="text"] {
+    border: 1px solid #555;
+    padding: 5px 8px;
+    border-radius: 4px;
+}
+
+input[type="color"] {
+    border: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: none;
+}
+
+button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: opacity 0.2s;
+}
+
+button:hover { opacity: 0.85; }
+#btn-start { background-color: #28a745; color: white; }
+#btn-stop { background-color: #dc3545; color: white; }
+#btn-clear { background-color: #6c757d; color: white; }
+
+#sys-container {
+    padding: 15px;
+    border-radius: 8px;
+    height: 300px;
+    overflow-y: auto;
+    line-height: 1.6;
+    border: 1px solid #444;
+    padding: 20px;
+    margin: 1em;
+}
+
+#desc {
+    text-align: center;
+    bottom: 8em;
+    position: fixed;
+    line-height: 1.6;
+    width: 100vw;
+}
+
+#subtitle-container {
+    height: 3.2em;
+    line-height: 1.6;
+    text-align: center;
+    bottom: 0;
+    position: fixed;
+    width: 100vw;
+    border-top: 1px solid red;
+    padding: 10px;
+}
+
+.interim-text {
+    opacity: 0.6;
+    font-style: italic;
+}
+
+.system-msg {
+    color: #888;
+    font-size: 0.85em;
+}
